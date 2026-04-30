@@ -2,12 +2,12 @@ import macbook from "../../assets/macbook.png";
 
 export default function Macbook() {
   return (
-    <div className="flex justify-center">
+    <section className="w-full flex justify-center px-4 md:px-6 py-10 md:py-16">
       <img
         src={macbook}
         alt="Macbook preview"
-        className="max-w-full h-auto"
+        className="w-full max-w-5xl h-auto object-contain"
       />
-    </div>
+    </section>
   );
 }

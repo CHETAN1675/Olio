@@ -25,38 +25,43 @@ const features = [
 
 const WhyChoose = () => {
   return (
-    <section className="relative bg-[#011F5B] text-white py-20 px-6 md:px-16 overflow-hidden">
+    <section className="relative bg-[#011F5B] text-white py-14 md:py-20 px-4 md:px-16 overflow-hidden">
       
       {/* Background shapes */}
-      <div className="absolute left-[-150px] top-[-50px] w-[350px] h-[250px] bg-[#022871]/30 rotate-90 rounded-lg"></div>
-      <div className="absolute right-[-200px] bottom-[-100px] w-[550px] h-[400px] bg-[#022871]/30 -rotate-90 rounded-lg"></div>
+      <div className="absolute left-[-120px] top-[-80px] w-[300px] md:w-[350px] h-[200px] md:h-[250px] bg-[#022871]/30 rotate-90 rounded-lg" />
+      <div className="absolute right-[-180px] bottom-[-120px] w-[420px] md:w-[550px] h-[300px] md:h-[400px] bg-[#022871]/30 -rotate-90 rounded-lg" />
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto relative z-10">
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+          
           {features.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col gap-6 p-6"
+              className="flex flex-col gap-5 p-5 md:p-6 rounded-xl transition hover:bg-white/5"
             >
+              
               {/* Icon */}
-               <img
+              <img
                 src={item.icon}
                 alt={item.title}
-                className="w-12 h-12 object-contain"
+                className="w-10 h-10 md:w-12 md:h-12 object-contain"
               />
 
               {/* Text */}
-              <div className="flex flex-col gap-3">
-                <h3 className="text-lg font-semibold leading-snug">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-base md:text-lg font-semibold leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-sm text-gray-200 leading-relaxed">
+                <p className="text-xs md:text-sm text-gray-200 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
+
             </div>
           ))}
+
         </div>
       </div>
     </section>

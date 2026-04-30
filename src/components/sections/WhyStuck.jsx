@@ -35,50 +35,52 @@ const features = [
 
 export default function WhyStuck() {
   return (
-    <section className="bg-[#F2F6FF] py-20 px-6">
+    <section className="bg-[#F2F6FF] py-14 md:py-20 px-4 md:px-6">
+      
       <div className="max-w-6xl mx-auto text-center">
         
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-semibold text-[#011F5B] leading-tight">
-          Why Industrial B2B{" "}<br/>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#011F5B] leading-tight">
+          Why Industrial B2B <br />
           <span className="bg-blue-600 text-white px-3 py-1 inline-block rotate-[-0.5deg]">
             Growth Feels Stuck
           </span>
         </h2>
 
         {/* Grid */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-t border-gray-200">
+        <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          
           {features.map((item, index) => (
             <div
               key={index}
-              className={`p-8 text-left border-gray-200 ${
-                index < 3 ? "border-b" : ""
-              } ${index % 3 !== 2 ? "lg:border-r" : ""}`}
+              className="p-6 md:p-8 text-left border-b sm:border-r border-gray-200 last:border-b-0"
             >
               {/* ICON */}
               <img
                 src={item.icon}
                 alt={item.title}
-                className="w-12 h-12 mb-4 object-contain"
+                className="w-10 h-10 md:w-12 md:h-12 mb-4 object-contain"
               />
 
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-2">
                 {item.title}
               </h3>
 
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
+
         </div>
 
         {/* CTA */}
-        <div className="mt-12">
+        <div className="mt-10 md:mt-12">
           <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-3 rounded-lg transition">
             Let’s Fix This {">"}
           </button>
         </div>
+
       </div>
     </section>
   );

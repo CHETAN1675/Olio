@@ -17,52 +17,52 @@ export default function WhyChooseUs() {
     },
     {
       title: "Strategy + Execution = Success",
-      desc: "We stay with you, even after delivering the deliverables. We build systems and ensure strategies convert into sales.",
+      desc: "We build systems that convert strategy into real sales outcomes.",
       image: "/icons1/4.png",
     },
   ];
 
-    return (
-    <section className="bg-[#011F5B] text-white py-20 px-6 md:px-16">
+  return (
+    <section className="bg-[#011F5B] text-white py-14 md:py-20 px-4 md:px-6 lg:px-16">
       
       {/* Heading */}
-      <div className="text-center mb-16 relative">
-        <span className="absolute left-1/2 -translate-x-1/2 top-2 w-28 h-14 bg-blue-600 rotate-1 -z-10"></span>
-        <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">
+      <div className="text-center mb-12 md:mb-16 relative">
+        
+        <span className="absolute left-1/2 -translate-x-1/2 top-3 w-24 md:w-28 h-10 md:h-14 bg-blue-600 rotate-1 -z-10"></span>
+
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
           Why Choose Us?
         </h2>
       </div>
 
       {/* Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto border-white/10">
+
         {items.map((item, i) => (
           <div
             key={i}
-            className="
-              flex flex-col gap-4 p-6
-              border-white/10
-              lg:border-r
-              lg:last:border-r-0
-            "
+            className="flex flex-col gap-4 p-6 md:p-8 border-b sm:border-b-0 lg:border-r border-white/10 last:border-r-0 hover:bg-white/5 transition"
           >
+
             {/* Icon */}
-            <div className="w-12 h-12 flex items-center justify-center">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="max-w-full max-h-full"
-              />
-            </div>
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-10 h-10 md:w-12 md:h-12 object-contain"
+            />
 
             {/* Text */}
-            <h3 className="text-lg font-semibold leading-snug">
+            <h3 className="text-base md:text-lg font-semibold leading-snug">
               {item.title}
             </h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
+
+            <p className="text-sm text-gray-300 leading-relaxed">
               {item.desc}
             </p>
+
           </div>
         ))}
+
       </div>
     </section>
   );
