@@ -1,46 +1,59 @@
 @import "tailwindcss";
 
+/* Smooth scrolling for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Root layout */
 body {
   width: 100%;
- 
   margin: 0 auto;
   background-color: #ffffff;
-  opacity: 1;
 
   /* Grid background */
   background-image:
     linear-gradient(to right, #f0f0f0 1px, transparent 1px),
     linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
-  background-size: 40px 40px; /* adjust grid size */
+  background-size: 40px 40px;
 }
 
-/* Main container */
+/* Prevent section hiding behind sticky header */
+section {
+  scroll-margin-top: 90px;
+}
+
+/* App container */
 #root {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-/* Responsive tweaks */
+/* Responsive grid */
 @media (max-width: 1024px) {
-  body {
-    background-size: 30px 30px;
-  }
+  body { background-size: 30px 30px; }
 }
 
 @media (max-width: 768px) {
-  body {
-    background-size: 20px 20px;
-  }
+  body { background-size: 20px 20px; }
 }
 
 @media (max-width: 480px) {
-  body {
-    background-size: 15px 15px;
-  }
+  body { background-size: 15px 15px; }
 }
 
+/* Spinner animation helper */
+.fade-in {
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Optional scroll animations */
 @keyframes scrollUp {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }

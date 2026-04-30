@@ -13,16 +13,16 @@ export default function Header() {
         
         {/* Nav */}
         <nav className="flex gap-8">
-          <a href="#" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
+          <a href="/#services" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
             Services
           </a>
-          <a href="#" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
+          <a href="#case-studies" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
             Case Studies
           </a>
-          <a href="#" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
+          <a href="/#about" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
             About Us
           </a>
-          <a href="#" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
+          <a href="/#insights" className="text-[16px] font-medium text-[#171717] hover:opacity-70">
             Insights
           </a>
         </nav>
