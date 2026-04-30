@@ -1,21 +1,81 @@
+# Olio Maximus — AdTech Platform (Frontend)
 
-# Olio
-Figma to React and tailwind.css
+Olio Maximus is a modern AdTech web platform built to help businesses create scalable marketing pipelines, generate consistent demand, and drive measurable revenue growth through structured, data-driven strategies.
 
-# React + Vite
+This repository contains the frontend implementation, focused on performance, modularity, and a clean user experience.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **React.js (Vite)** — Fast and modern frontend tooling
+* **Tailwind CSS** — Utility-first styling framework
+* **Carousel (Carusior)** — Interactive sliders for showcasing content
+* **Clipport** — UI/content enhancement utilities
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Architecture
 
-## Expanding the ESLint configuration
+Below is the current project structure:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+olio/
+│
+├── node_modules/          # Dependencies
+├── public/                # Static public assets
+│
+├── src/
+│   ├── assets/            # Images and static media
+│   │   ├── macbook.png
+│   │   └── Vector.png
+│   │
+│   ├── components/        # Reusable UI components
+│   │   ├── layout/        # Layout components (Navbar, Footer, etc.)
+│   │   └── sections/      # Page sections (Hero, Features, etc.)
+│   │
+│   ├── App.jsx            # Main app component
+│   ├── App.css            # App-level styles
+│   ├── index.css          # Global styles (Tailwind imports)
+│   └── main.jsx           # Entry point (Vite)
+│
+├── index.html             # Root HTML file
+├── package.json           # Project metadata & dependencies
+├── package-lock.json
+├── vite.config.js         # Vite configuration
+├── eslint.config.js       # Linting rules
+├── .gitignore
+└── README.md
+```
 
+---
+
+## ✨ Key Features
+
+* ⚡ Lightning-fast performance with Vite
+* 📱 Fully responsive design (mobile-first)
+* 🧩 Component-based architecture
+* 🎠 Carousel-driven sections for dynamic content
+* 🎯 Conversion-focused UI/UX
+* 🎨 Clean design powered by Tailwind CSS
+
+---
+
+## 🧠 Core Sections (UI)
+
+* **Hero Section** — Strong value proposition + CTA
+* **Client Showcase** — Visual proof & credibility
+* **Growth Framework** — Three-layer system explanation
+* **How It Works** — Step-by-step breakdown
+* **Testimonials** — Real client feedback
+* **Insights** — Educational content for users
+* **CTA Blocks** — Lead generation focus
+
+---
+
+
+
+
+
+
+---
