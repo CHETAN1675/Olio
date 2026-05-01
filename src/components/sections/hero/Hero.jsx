@@ -8,7 +8,7 @@ export default function Hero() {
         {/* LEFT */}
         <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
           
-          <span className="text-xs tracking-widest uppercase bg-blue-500/10 text-blue-400 px-3 py-1 rounded-md">
+          <span className=" text-xs tracking-widest uppercase bg-blue-500/10 text-[#135BEC] px-3 py-1 rounded-md">
             B2B Revenue Growth
           </span>
 

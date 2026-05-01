@@ -53,7 +53,7 @@ export default function Insights() {
         </div>
 
         <button className="bg-yellow-400 text-black px-5 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-yellow-300 transition w-fit">
-          See All Articles →
+          See All Articles {">"}
         </button>
 
       </div>

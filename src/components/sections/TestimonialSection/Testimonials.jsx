@@ -38,11 +38,10 @@ export default function TestimonialCarousel() {
 
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold">
           Trusted By{" "}
           <span className="relative inline-block">
-            <span className="absolute inset-0 bg-blue-600 -rotate-1 rounded"></span>
+            <span className="absolute inset-0 bg-[#135BEC] -rotate-[-0.9]"></span>
             <span className="relative text-white px-2">
               Industry Leaders
             </span>
@@ -52,21 +51,26 @@ export default function TestimonialCarousel() {
         <p className="mt-4 text-sm md:text-base text-gray-500">
           Discover how teams around the world are scaling their operations and improving efficiency.
         </p>
-
       </div>
 
       {/* Slider */}
       <div className="relative max-w-6xl mx-auto flex items-center justify-center">
+
+        {/* LEFT FADE */}
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-16 md:w-24 bg-gradient-to-r from-white to-transparent z-10" />
+
+        {/* RIGHT FADE */}
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-16 md:w-24 bg-gradient-to-l from-white to-transparent z-10" />
 
         {/* Left Button */}
         <button
           onClick={prev}
           className="absolute left-2 md:left-0 z-20 bg-yellow-400 w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center shadow"
         >
-          ←
+          {"<"}
         </button>
 
-        {/* Cards */}
+        {/* Cards (UNCHANGED) */}
         <div className="flex gap-4 md:gap-6 items-center justify-center overflow-x-auto px-6 md:px-0">
           {testimonials.map((item, i) => (
             <TestimonialCard
@@ -82,14 +86,13 @@ export default function TestimonialCarousel() {
           onClick={next}
           className="absolute right-2 md:right-0 z-20 bg-yellow-400 w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center shadow"
         >
-          →
+          {">"}
         </button>
 
       </div>
 
       {/* Indicators */}
       <div className="flex justify-center gap-2 mt-6 md:mt-8">
-
         {testimonials.map((_, i) => (
           <div
             key={i}
@@ -98,7 +101,6 @@ export default function TestimonialCarousel() {
             }`}
           />
         ))}
-
       </div>
 
     </section>

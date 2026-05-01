@@ -56,7 +56,7 @@ export default function CaseStudy() {
         {/* TITLE */}
         <div className="relative w-fit">
           
-          <div className="absolute bg-blue-600 w-full md:w-[280px] h-[50px] md:h-[60px] left-0 top-2 rotate-[-0.6deg] -z-10" />
+          <div className="absolute bg-blue-600 w-full md:w-[270px] h-[50px] md:h-[60px] left-0 top-2 rotate-[-0.6deg] -z-10" />
 
           <h2 className="text-[#011F5B] text-3xl md:text-5xl font-semibold leading-tight">
             <span className="text-white">Real Results</span> From <br /> Real Clients
@@ -66,7 +66,7 @@ export default function CaseStudy() {
 
         {/* BUTTON */}
         <button className="bg-yellow-400 px-5 py-3 rounded-lg font-medium flex items-center gap-2 w-fit">
-          Read Case Studies →
+          Read Case Studies {">"}
         </button>
 
       </div>

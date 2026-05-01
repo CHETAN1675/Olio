@@ -26,14 +26,18 @@ export default function WhyChooseUs() {
     <section className="bg-[#011F5B] text-white py-14 md:py-20 px-4 md:px-6 lg:px-16">
       
       {/* Heading */}
-      <div className="text-center mb-12 md:mb-16 relative">
-        
-        <span className="absolute left-1/2 -translate-x-1/2 top-3 w-24 md:w-28 h-10 md:h-14 bg-blue-600 rotate-1 -z-10"></span>
-
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
-          Why Choose Us?
-        </h2>
-      </div>
+     <div className="text-center mb-12 md:mb-16">
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+    
+    <span className="relative inline-block px-3 z-10">
+      <span className="absolute -left-0 -right-3 top-[10%] h-[100%] bg-[#135BEC] -z-10 rotate-1"></span>
+      Why
+    </span>{" "}
+    
+    Choose Us?
+    
+  </h2>
+</div>
 
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto border-white/10">

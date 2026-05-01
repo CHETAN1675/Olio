@@ -46,7 +46,7 @@ export default function ExcelSection() {
           </p>
 
           <button className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-lg font-medium flex items-center gap-2">
-            See How We Help Your Industry <span>→</span>
+            See How We Help Your Industry <span>{">"}</span>
           </button>
         </div>
 

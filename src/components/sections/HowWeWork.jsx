@@ -40,7 +40,7 @@ export default function HowWeWork() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-semibold leading-tight tracking-[-1.5px] text-[#011F5B]">
               How We{" "}
               <span className="relative inline-block">
-                <span className="absolute inset-0 bg-[#135BEC] rounded rotate-[1deg] scale-x-110 scale-y-110"></span>
+                <span className="absolute inset-0 bg-[#135BEC] rotate-[1deg] scale-x-110 scale-y-110"></span>
                 <span className="relative text-white px-2">
                   Work?
                 </span>

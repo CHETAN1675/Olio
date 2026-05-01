@@ -16,11 +16,11 @@ const Footer = () => {
             <img
               src={logo}
               alt="Olio Maximus"
-              className="h-[19.27px] w-auto"
+              className="h-[14px] w-[120px]"
             />
 
             <p className="text-[#4B5563] text-sm leading-[150%]">
-              Strategic growth consulting for mid-market industrial firms.
+              Strategic growth consulting for<br/> mid-market industrial firms.
             </p>
 
             <div className="flex flex-col gap-2 text-[#4B5563] text-sm">

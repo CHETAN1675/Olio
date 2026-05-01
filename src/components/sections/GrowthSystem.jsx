@@ -23,7 +23,7 @@ export default function GrowthSystem() {
         <div className="flex flex-col divide-y divide-gray-300 w-full lg:max-w-xl">
           
           {/* Item 1 */}
-          <div className="flex gap-5 md:gap-6 py-8 md:py-10">
+          <div className="flex gap-5 md:gap-6 py-8 md:py-10 relative">
             <img src="icons/icon11.png" className="w-10 h-10 md:w-12 md:h-12 object-contain shrink-0" />
             <div>
               <h3 className="text-base md:text-lg font-semibold mb-2">
@@ -33,7 +33,7 @@ export default function GrowthSystem() {
                 Pipeline filled with qualified opportunities that actually close.
                 Multi-channel programs that bring decision-makers in, not the other way around.
               </p>
-              <div className="w-28 md:w-40 h-1 bg-yellow-400 mt-4"></div>
+              <div className="absolute bottom-0 left-0 w-28 md:w-40 h-1 bg-yellow-400"></div>
             </div>
           </div>
 
