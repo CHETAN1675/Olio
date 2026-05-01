@@ -88,7 +88,7 @@ export default function CaseStudy() {
                   {/* IMAGE */}
                   <img
                     src={item.image}
-                    alt=""
+                    alt={item.title}
                     className="w-full h-full object-cover"
                   />
 

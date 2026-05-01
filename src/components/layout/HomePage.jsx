@@ -1,83 +1,48 @@
-import { lazy, Suspense } from "react";
-import Spinner from "../common/Spinner";
-
-// Lazy imports
-const Hero = lazy(() => import("../sections/hero/Hero"));
-const MacBook = lazy(() => import("../sections/Macbook"));
-const WhyChoose = lazy(() => import("../sections/WhyChoose"));
-const ExcelSection = lazy(() => import("../sections/ExcelSection"));
-const WhyStuck = lazy(() => import("../sections/WhyStuck"));
-const GrowthSystem = lazy(() => import("../sections/GrowthSystem"));
-const HowWeWork = lazy(() => import("../sections/HowWeWork"));
-const ComponentsSection = lazy(() => import("../sections/componentsSection/ComponentsSection"));
-const WhyChooseUs = lazy(() => import("../sections/WhyChooseUs"));
-const CaseStudy = lazy(() => import("../sections/CaseStudy"));
-const Testimonials = lazy(() => import("../sections/TestimonialSection/Testimonials"));
-const Insights = lazy(() => import("../sections/Insights"));
-const CTASection = lazy(() => import("../sections/CTASection"));
+import Hero from "../sections/hero/Hero";
+import MacBook from "../sections/Macbook";
+import WhyChoose from "../sections/WhyChoose";
+import ExcelSection from "../sections/ExcelSection";
+import WhyStuck from "../sections/WhyStuck";
+import GrowthSystem from "../sections/GrowthSystem";
+import HowWeWork from "../sections/HowWeWork";
+import ComponentsSection from "../sections/componentsSection/ComponentsSection";
+import WhyChooseUs from "../sections/WhyChooseUs";
+import CaseStudy from "../sections/CaseStudy";
+import Testimonials from "../sections/TestimonialSection/Testimonials";
+import Insights from "../sections/Insights";
+import CTASection from "../sections/CTASection";
 
 export default function HomePage() {
   return (
     <>
-      <Suspense fallback={<Spinner />}>
-        <Hero />
-      </Suspense>
-
-      <Suspense fallback={<Spinner />}>
-        <MacBook />
-      </Suspense>
+      <Hero />
+      <MacBook />
 
       <section id="about">
-        <Suspense fallback={<Spinner />}>
-          <WhyChoose />
-        </Suspense>
+        <WhyChoose />
       </section>
 
       <section id="services">
-        <Suspense fallback={<Spinner />}>
-          <ExcelSection />
-        </Suspense>
+        <ExcelSection />
       </section>
 
-      <Suspense fallback={<Spinner />}>
-        <WhyStuck />
-      </Suspense>
-
-      <Suspense fallback={<Spinner />}>
-        <GrowthSystem />
-      </Suspense>
-
-      <Suspense fallback={<Spinner />}>
-        <HowWeWork />
-      </Suspense>
-
-      <Suspense fallback={<Spinner />}>
-        <ComponentsSection />
-      </Suspense>
-
-      <Suspense fallback={<Spinner />}>
-        <WhyChooseUs />
-      </Suspense>
+      <WhyStuck />
+      <GrowthSystem />
+      <HowWeWork />
+      <ComponentsSection />
+      <WhyChooseUs />
 
       <section id="case-studies">
-        <Suspense fallback={<Spinner />}>
-          <CaseStudy />
-        </Suspense>
+        <CaseStudy />
       </section>
 
-      <Suspense fallback={<Spinner />}>
-        <Testimonials />
-      </Suspense>
+      <Testimonials />
 
       <section id="insights">
-        <Suspense fallback={<Spinner />}>
-          <Insights />
-        </Suspense>
+        <Insights />
       </section>
 
-      <Suspense fallback={<Spinner />}>
-        <CTASection />
-      </Suspense>
+      <CTASection />
     </>
   );
 }
